@@ -2,14 +2,14 @@
   "name": "codevector-products-api",
   "version": "1.0.0",
   "description": "REST API + React frontend for browsing 200k products with cursor-based pagination",
-  "main": "src/app.js",
+  "main": "backend/src/app.js",
   "scripts": {
-    "start": "node src/app.js",
-    "dev:server": "nodemon src/app.js",
-    "dev:client": "cd client && npm run dev",
+    "start": "node backend/src/app.js",
+    "dev:server": "nodemon backend/src/app.js",
+    "dev:client": "cd frontend && npm run dev",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
-    "build": "cd client && npm run build",
-    "seed": "node scripts/seed.js"
+    "build": "cd frontend && npm run build",
+    "seed": "node backend/scripts/seed.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
